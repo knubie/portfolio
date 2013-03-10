@@ -1,0 +1,5 @@
+gem 'sass'
+#gem 'foreman'
+gem 'guard'
+gem 'guard-slim'
+gem 'guard-livereload'
