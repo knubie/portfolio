@@ -1,5 +1,5 @@
-@import "media-queries"
-@import "prefixes"
+@import media-queries
+@import prefixes
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700)
 
 $dark: #413e45
@@ -19,6 +19,8 @@ body
   text-align: left
   margin-top: 135px
   position: relative
+  +mobile-portrait
+    width: 280px
 
 #header
   position: relative
@@ -97,3 +99,12 @@ body
     li:hover
       cursor: pointer
       color: $dark
+
+#blog
+  line-height: 24px
+  h1
+    font-size: 24px
+    color: $dark
+    margin-bottom: 24px
+  p
+    font-size: 16px

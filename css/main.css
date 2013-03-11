@@ -12,6 +12,9 @@ body {
   text-align: left;
   margin-top: 135px;
   position: relative; }
+  @media only screen and (min-width: 320px) and (max-width: 567px) {
+    #container {
+      width: 280px; } }
 
 #header {
   position: relative;
@@ -84,3 +87,12 @@ body {
 #work ul li:hover {
   cursor: pointer;
   color: #413e45; }
+
+#blog {
+  line-height: 24px; }
+  #blog h1 {
+    font-size: 24px;
+    color: #413e45;
+    margin-bottom: 24px; }
+  #blog p {
+    font-size: 16px; }
