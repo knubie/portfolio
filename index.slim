@@ -3,11 +3,34 @@ html
   head
     meta charset="utf-8"
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-    title
+    title Mutt.
     meta content="" name="description"
-    meta content="width=device-width, initial-scale=1.0, 
-        maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"
     link href="css/reset.css" rel="stylesheet"
     link href="css/main.css" rel="stylesheet"
+    script src="js/vendor/zepto.min.js"
+    script src="js/main.js"
   body
     #container
+      #header
+        img#logo src="img/logo.png"
+      #nav
+        ul
+          li.active about
+          li work
+          li contact
+          li blog
+      .page#about.active.fadein
+        | We devetlop websites and applications for desktop and mobile using HTML5, CSS3, Javascript, Rails, Node and others.
+      .page#work
+        ul
+          li Best Buy
+          li Sequence
+          li Gram
+          li Chipotle
+          li Goldteeth&Co
+          li Words are Pictures
+          li Chris Rubino
+          li Ian Bloom
+
+      .page#blog

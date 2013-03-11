@@ -1,6 +1,88 @@
-/* ==========================================================================
-   Header
-   ========================================================================== */
-/*
- * Subhead
- */
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+body {
+  background-color: whitesmoke;
+  text-align: center;
+  font-family: "Inconsolata", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.2px; }
+
+#container {
+  width: 390px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 135px;
+  position: relative; }
+
+#header {
+  position: relative;
+  height: 43px; }
+  #header #logo {
+    -webkit-animation-duration: 750;
+    -webkit-animation-name: fadedown;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+@-webkit-keyframes fadedown {
+  from {
+    top: -20px;
+    opacity: 0; }
+
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+.fadein {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-delay: 250;
+  -webkit-animation-fill-mode: forwards; }
+
+#nav {
+  margin: 45px 0;
+  opacity: 0;
+  -webkit-text-stroke: 0.4px; }
+  #nav ul li {
+    margin: 0 -1px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #b4b3b1;
+    border-radius: 2px;
+    font-size: 10px;
+    color: white;
+    padding: 2px 3px 0px 4px;
+    letter-spacing: 1px; }
+  #nav ul li:hover {
+    background-color: #413e45;
+    cursor: pointer; }
+  #nav ul li.active {
+    background-color: #04b6fc; }
+
+#nav:hover {
+  cursor: default; }
+
+.page {
+  position: absolute;
+  top: 145px;
+  left: 50px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #b4b3b1;
+  opacity: 0;
+  -webkit-transition: left 500, opacity 500; }
+
+.page.active {
+  display: block;
+  left: 0px;
+  opacity: 1; }
+
+#work ul li:hover {
+  cursor: pointer;
+  color: #413e45; }
