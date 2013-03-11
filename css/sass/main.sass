@@ -44,14 +44,13 @@ body
   to
     opacity: 1
 
-.fadein
+#nav
+  margin: 45px 0
+  opacity: 0
   -webkit-animation-duration: 1s
   -webkit-animation-name: fadein
   -webkit-animation-delay: 250
   -webkit-animation-fill-mode: forwards
-#nav
-  margin: 45px 0
-  opacity: 0
   -webkit-text-stroke: 0.4px
   ul
     li
@@ -81,6 +80,10 @@ body
   line-height: 27px
   color: $light
   opacity: 0
+  //-webkit-animation-duration: 1s
+  //-webkit-animation-name: fadein
+  //-webkit-animation-delay: 250
+  //-webkit-animation-fill-mode: forwards
   -webkit-transition: left 500, opacity 500
 
 .page.active
