@@ -24,7 +24,13 @@ body {
     -webkit-animation-name: fadedown;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    width: 128px;
+    height: 43px;
+    background-image: url("../img/logo.png"); }
+  #header #logo:hover {
+    background-image: url("../img/logo-hover.png");
+    cursor: pointer; }
 
 @-webkit-keyframes fadedown {
   from {
@@ -58,8 +64,9 @@ body {
     border-radius: 2px;
     font-size: 10px;
     color: white;
-    padding: 2px 3px 0px 4px;
-    letter-spacing: 1px; }
+    padding: 4px;
+    letter-spacing: 1px;
+    line-height: 6px; }
   #nav ul li:hover {
     background-color: #413e45;
     cursor: pointer; }
@@ -75,7 +82,7 @@ body {
   left: 50px;
   font-size: 18px;
   line-height: 27px;
-  color: #b4b3b1;
+  color: #a5a4a5;
   opacity: 0;
   -webkit-transition: left 500, opacity 500; }
 
@@ -92,7 +99,7 @@ body {
   line-height: 24px; }
   #blog h1 {
     font-size: 24px;
-    color: #413e45;
-    margin-bottom: 24px; }
+    color: #413e45; }
   #blog p {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-top: 24px; }
